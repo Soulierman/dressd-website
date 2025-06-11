@@ -1,0 +1,54 @@
+.index {
+	display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+section {
+  flex: 1;
+	display: flex;
+	flex-direction: column;
+  margin: 1%;
+}
+section p{
+  font-weight: bold;
+}
+section p:first-of-type{
+  font-size: x-large;
+}
+section picture{
+  flex: 8;
+}
+
+section fieldset{
+  display:grid;
+  grid-template-rows: 2fr 3fr;
+  grid-template-columns: repeat(8,1fr);
+}
+section fieldset button{
+ grid-area: 2 / 6 / 2 / 7;
+ border: #757bc8 4px solid;
+}
+section fieldset label{
+  grid-area: 1 / 3 / 1 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+section fieldset select{
+  grid-area: 2 / 3 / 2 / 6;
+  border: #757bc8 4px solid;
+}
+video{
+  flex: 2;
+}
+div:last-of-type{
+  justify-content: space-around;
+  align-items: center;
+}
+footer{
+  flex:3;
+}
+#rmCart1,#rmCart2,#rmCart3{
+  display:none;
+}

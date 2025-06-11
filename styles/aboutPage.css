@@ -1,0 +1,11 @@
+footer div {
+  width: 50%;
+  margin-left: 25%;
+  margin-right:25%;
+}
+div fieldset{
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+  

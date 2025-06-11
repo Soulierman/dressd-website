@@ -1,0 +1,49 @@
+main{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+section {
+  display: grid;
+  grid-template-rows: repeat(10,60px);
+  grid-template-columns: repeat(8, 1fr);
+  padding: 2.5%;
+}
+section label{
+  display:flex;
+  justify-content: center;
+  align-items:end;
+}
+picture{
+  grid-area: 1 / 1 / 11 / 5;
+}
+#email{
+  grid-area: 2/6/3/9;
+}
+#phone{
+  grid-area: 4/6/5/7;
+}
+#Issue-select{
+  grid-area: 4/8/5/9;
+}
+textarea{
+  grid-area: 6/6/11/9;
+}
+label:first-of-type{
+  grid-area: 1/7/2/8
+}
+label:nth-of-type(2){
+  grid-area: 3/6/4/7;
+}
+label:nth-of-type(3){
+  grid-area: 3/8/4/9;
+}
+label:last-of-type{
+  grid-area: 5/6/6/9;
+}
+@media (max-width: 755px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}

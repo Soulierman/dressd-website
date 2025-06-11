@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dressd</title>
+    <link type="text/css" rel="stylesheet" href="styles/common.css" />
+    <link type="text/css" rel="stylesheet" href="styles/cartPage.css" />
+    <script src="scripts/cartPage.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="assets/dressdLogo2.png"
+          alt="Logo"
+      /></a>
+      <nav>
+        <a href="aboutPage.html" target="blank_"><p>About</p></a>
+        <a href="index.html"><p>Home</p></a>
+        <a href="logInPage.html"><p>Login</p></a>
+      </nav>
+    </div>
+    <header>
+      <h1>Dressd</h1>
+      <h2>Slogan</h2>
+    </header>
+
+    <main>
+      <section id="Product1">
+        <picture>
+          <img
+            src="assets/Pants1.jpg"
+            alt="Urban Fold Utility Pants"
+          />
+        </picture>
+        <p class="productName">Urban Fold Utility Pants</p>
+        <p class="price">79.99$</p>
+        <fieldset>
+          <label for="Size-select">Size</label>
+          <select id="Size-select">
+            <option value="choose">Choose an option</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+          </select>
+          <button id="rmCart1" class="sectionButtons">Remove</button>
+        </fieldset>
+      </section>
+
+      <section>
+        <h2>Checkout</h2>
+        <div>
+          <p id="p1">79.99$</p>
+          <p id="totalPrice">Total Price</p>
+        </div>
+        <button id="checkout">Checkout</button>
+      </section>
+      <h2 id="checkoutMessage">&nbsp;</h2>
+    </main>
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/iI36DiRaXcc?si=f8Exq1iDLQUsnBLe"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <footer class="links">
+        <fieldset>
+          <ul>
+            <li>
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" value="" required />
+            </li>
+            <li>
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" value="" required />
+            </li>
+          </ul>
+          <label for="suggestion">Leave us a suggestion!</label>
+          <textarea
+            id="suggestion"
+            rows="4"
+            cols="20"
+            placeholder="Please write your suggestion here"
+          ></textarea>
+          <button>Send</button>
+          <h3>&nbsp;</h3>
+        </fieldset>
+      </footer>
+    </div>
+  </body>
+</html>
